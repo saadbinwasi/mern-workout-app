@@ -1,0 +1,103 @@
+*{
+  color: white;
+}
+
+.Home{
+  width: 100%;
+
+  background-color: rgb(22, 22, 22);
+}
+
+.heading-allworkout{
+
+ 
+  margin-top: 60px;
+margin-right: 600px;
+
+}
+
+.container-navbar{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  
+  
+}
+
+.main-container-home{
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.workouts{
+  height: 1000px;
+  width: 60%;
+ text-align: center;
+  align-items: center;
+
+}
+
+.workout-detail{
+  margin-top: 60px;
+  text-align: center;
+
+}
+
+.adding-workout {
+  position: relative; /* Positioning context for the pseudo-element */
+  width: 40%;
+  height: 1000px;
+  background-color: rgb(253, 228, 233); /* Fallback color */
+  background-image: url('https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?q=80&w=3360&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); /* Background image */
+  background-size: cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* No repeating of the image */
+}
+
+.adding-workout::before {
+  content: ""; /* Required for the pseudo-element */
+  position: absolute; /* Position it relative to .adding-workout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent overlay */
+  z-index: 1; /* Overlay above the background image */
+}
+
+.adding-workout .content {
+  position: relative; /* Ensures content is above the overlay */
+  z-index: 2; /* Content should be above the overlay */
+  color: white; /* Text color for contrast */
+  padding: 20px; /* Padding around the content */
+}
+
+.workout-form{
+  text-align: center;
+}
+
+
+
+
+.list{
+  margin-left: 100px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  font-size: 16px;
+
+}
+
+
+
+.container Link{
+ text-decoration: none;
+  
+}
